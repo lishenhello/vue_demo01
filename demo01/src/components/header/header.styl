@@ -1,0 +1,41 @@
+.header_layer
+	position: fixed
+	left: 0
+	bottom: 0
+	right: 0
+	top: 0
+	background-color: rgba(0,0,0,0.5)
+	z-index:3
+header
+	width: 100%
+	height: 44px
+	background: #03a9f4
+	color: #fff
+	transition: all 0.3s
+	position:fixed
+	left: 0
+	top: 0
+	z-index:4
+	.icon-fenlei,.icon-sousuo_sousuo
+		width:40px
+		height: 44px
+		position: absolute
+		top: 0
+		line-height: 44px
+		text-align: center
+	.icon-fenlei
+		left: 0 
+	.header_title
+		width: 100%
+		padding: 0 40px
+		box-sizing: border-box
+		height: 100%
+		text-align: center
+		line-height: 44px
+	.icon-sousuo_sousuo
+		right: 0 
+	&.show 
+		transform: translateX(250px)
+		transition: all 0.3s
+
+

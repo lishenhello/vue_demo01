@@ -1,0 +1,52 @@
+.detail 
+	position:fixed
+	left: 0
+	top: 0
+	z-index: 6
+	width: 100%
+	height: 100%
+	background: #fff
+	overflow:hidden
+	header
+		position: relative
+		width: 100%
+		height: 44px
+		background: #03a9f4
+		padding: 0 40px
+		box-sizing: border-box
+		.back
+			position:absolute
+			top: 0
+			left: 0
+			width: 40px
+			height: 100%
+			line-height: 44px
+			text-align: center
+			color: #fff
+			font-family: "黑体"
+			font-size: 20px
+		.title
+			width: 100%
+			height: 100%
+			text-align: center
+			line-height: 44px
+			color: #fff
+			over-flow: hidden
+			white-space: no-wrap
+			text-overflow: ellipsis
+	section
+		width: 100%
+		h3,p
+			padding: 10px 5px
+		a 
+			padding: 10px 15px
+			font-size: 16px
+			display:block
+&.fade-enter-active, &.fade-leave-active {
+    transition: all 0.2s linear
+    transform: translate3d(0, 0, 0)
+}
+ &.fade-enter, &.fade-leave-active {
+    opacity: 0
+    transform: translate3d(100%, 0, 0)
+ }
